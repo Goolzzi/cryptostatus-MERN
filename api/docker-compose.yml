@@ -1,0 +1,33 @@
+version: "2"
+
+services:
+  app:
+    image: cryptostats/api
+    build: .
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - INFLUX_HOST=influxdb
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - influxdb
+
+  mongodb:
+    image: mongo
+    volumes:
+      - ./mongodb:/data/db
+    ports:
+      - "27017:27017"
+    logging:
+      driver: none
+
+  influxdb:
+    image: influxdb:latest
+    volumes:
+      - ./influxdb:/var/lib/influxdb
+    ports:
+      - "8086:8086"
+    logging:
+      driver: none
+

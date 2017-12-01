@@ -1,0 +1,83 @@
+.ResetPassword {
+    overflow: hidden;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 15px 0 0 0;
+    }
+
+    .Container-Form {
+        width: 350px;
+        margin: 50px auto 0 auto;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 100;
+            margin: 0;
+            color: #767676;
+        }
+
+        .Infobox {
+            background: black;
+            padding: 10px;
+            margin: 15px 0 5px 0;
+            border-radius: 3px;
+            color: white;
+
+            &.error {
+                background: #ecd4d4;
+
+                h3 {
+                    font-size: 15px;
+                    font-weight: 100;
+                    margin: 0;
+                    color: #914040;
+                }
+            }
+
+            &.success {
+                background: #d4ece6;
+                h3 {
+                    font-size: 15px;
+                    font-weight: 100;
+                    margin: 0;
+                    color: #409153;
+                }
+            }
+        }
+
+        input, textarea {
+            width: 100%;
+            display: block;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 5px 5px 5px;
+            margin: 20px 0;
+            outline: none!important;
+            font-size: 16px;
+        }
+
+        input[type=submit]:disabled {
+            background: #aaa;
+        }
+
+        .btn-submit {
+            width: 100%;
+            display: block;
+            border: 1px solid #ddd;
+            padding: 15px 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            outline: none!important;
+            font-size: 16px;
+            box-sizing: border-box;
+            cursor: pointer;
+            color: white;
+            background: #19232f;
+            padding: 10px;
+        }
+    }
+}
+

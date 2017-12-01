@@ -1,0 +1,10 @@
+version: "2"
+services:
+  app:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - /app/node_modules
+      - .:/app
+    command: npm run start:dev
+

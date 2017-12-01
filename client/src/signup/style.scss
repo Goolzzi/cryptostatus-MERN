@@ -1,0 +1,155 @@
+.Signup {
+    overflow: hidden;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 15px 0 0 0;
+    }
+
+    > div {
+        width: 50%;
+        float: left;
+    }
+    .Container-Form {
+        width: 350px;
+        margin: 50px auto 0 auto;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 100;
+            margin: 0;
+            color: #767676;
+        }
+
+        .Container-Social-Login {
+            font-size: 22px;
+            line-height: 1.6;
+            font-weight: 300;
+            color: #646464;
+            text-align: center;
+
+            h3 {
+                font-size: 15px;
+                font-weight: 100;
+                margin: 0;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: 17px;
+                color: #767676;
+
+                .btn-facebook-login {
+                    margin: 20px 20px 35px 20px;
+                    color: #3b5998;
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                    background: none;
+    
+                    i {
+                        font-size: 4em;
+                    }
+                }
+    
+                .btn-google-login {
+                    margin: 20px 20px 35px 20px;
+                    height: 40px;
+                    border: none;
+                    background: none;
+                }
+            }
+        }
+
+        .Infobox {
+            background: black;
+            padding: 10px;
+            margin: 15px 0 5px 0;
+            border-radius: 3px;
+            color: white;
+
+            &.error {
+                background: #ecd4d4;
+
+                h3 {
+                    font-size: 15px;
+                    font-weight: 100;
+                    margin: 0;
+                    color: #914040;
+                }
+            }
+
+            &.success {
+                background: #d4ece6;
+                h3 {
+                    font-size: 15px;
+                    font-weight: 100;
+                    margin: 0;
+                    color: #409153;
+                }
+            }
+        }
+
+        input, textarea {
+            width: 100%;
+            display: block;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 5px 5px 5px;
+            margin: 20px 0;
+            outline: none!important;
+            font-size: 16px;
+        }
+
+        input[type=submit]:disabled {
+            background: #aaa;
+        }
+
+        .btn-submit {
+            width: 100%;
+            display: block;
+            border: 1px solid #ddd;
+            padding: 15px 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            outline: none!important;
+            font-size: 16px;
+            box-sizing: border-box;
+            cursor: pointer;
+            color: white;
+            background: #19232f;
+            padding: 10px;
+        }
+    }
+
+    .Container-Tutor {
+        background-image: url("../assets/images/tutor-background.png");
+        background-size: 100% 100%;
+        text-align: center;
+        background-color: #f6f7f8;
+        
+        h1 {
+            color: #19222f;
+            margin: 30px
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 200;
+            color: #1c2634;
+            margin: 30px
+        }
+
+        img {
+            height: 50%;
+            position: absolute;
+            right: 5%;
+            bottom: 15%;
+        }
+    }
+  
+}
+
